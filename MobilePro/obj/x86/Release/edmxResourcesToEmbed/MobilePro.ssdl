@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MSProModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MSProModelStoreContainer">
+    <EntitySet Name="Brands" EntityType="MSProModel.Store.Brands" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Categories" EntityType="MSProModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Condition" EntityType="MSProModel.Store.Condition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Expense" EntityType="MSProModel.Store.Expense" store:Type="Tables" store:Schema="dbo" store:Name="Expense">
+      <DefiningQuery>SELECT 
+      [Expense].[ExpenseCode] AS [ExpenseCode], 
+      [Expense].[VendorCode] AS [VendorCode], 
+      [Expense].[ExpenseName] AS [ExpenseName], 
+      [Expense].[Charge] AS [Charge], 
+      [Expense].[Remarks] AS [Remarks], 
+      [Expense].[CreatedBy] AS [CreatedBy], 
+      [Expense].[CreatedDate] AS [CreatedDate], 
+      [Expense].[UpdatedBy] AS [UpdatedBy], 
+      [Expense].[UpdatedDate] AS [UpdatedDate]
+      FROM [dbo].[Expense] AS [Expense]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ExpenseVendors" EntityType="MSProModel.Store.ExpenseVendors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Fault" EntityType="MSProModel.Store.Fault" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OutSources" EntityType="MSProModel.Store.OutSources" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Products" EntityType="MSProModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesBill" EntityType="MSProModel.Store.SalesBill" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesItems" EntityType="MSProModel.Store.SalesItems" store:Type="Tables" store:Schema="dbo" store:Name="SalesItems">
+      <DefiningQuery>SELECT 
+      [SalesItems].[ReceiptNo] AS [ReceiptNo], 
+      [SalesItems].[CategoryCode] AS [CategoryCode], 
+      [SalesItems].[ProductCode] AS [ProductCode], 
+      [SalesItems].[Quantity] AS [Quantity], 
+      [SalesItems].[SellingPrice] AS [SellingPrice], 
+      [SalesItems].[CreatedBy] AS [CreatedBy], 
+      [SalesItems].[CreatedDate] AS [CreatedDate], 
+      [SalesItems].[UpdatedBy] AS [UpdatedBy], 
+      [SalesItems].[UpdatedDate] AS [UpdatedDate]
+      FROM [dbo].[SalesItems] AS [SalesItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SalesPurchase" EntityType="MSProModel.Store.SalesPurchase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SalesPurchaseItems" EntityType="MSProModel.Store.SalesPurchaseItems" store:Type="Tables" store:Schema="dbo" store:Name="SalesPurchaseItems">
+      <DefiningQuery>SELECT 
+      [SalesPurchaseItems].[OrderNo] AS [OrderNo], 
+      [SalesPurchaseItems].[CategoryCode] AS [CategoryCode], 
+      [SalesPurchaseItems].[ProductCode] AS [ProductCode], 
+      [SalesPurchaseItems].[Quantity] AS [Quantity], 
+      [SalesPurchaseItems].[UnitCost] AS [UnitCost]
+      FROM [dbo].[SalesPurchaseItems] AS [SalesPurchaseItems]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SalesStocks" EntityType="MSProModel.Store.SalesStocks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="security_Pages" EntityType="MSProModel.Store.security_Pages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="security_RolePages" EntityType="MSProModel.Store.security_RolePages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="security_Roles" EntityType="MSProModel.Store.security_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="security_UsersInRoles" EntityType="MSProModel.Store.security_UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ServiceBill" EntityType="MSProModel.Store.ServiceBill" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StaffExpense" EntityType="MSProModel.Store.StaffExpense" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Status" EntityType="MSProModel.Store.Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="MSProModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vendors" EntityType="MSProModel.Store.Vendors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_Membership" EntityType="MSProModel.Store.webpages_Membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_OAuthMembership" EntityType="MSProModel.Store.webpages_OAuthMembership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="webpages_Roles" EntityType="MSProModel.Store.webpages_Roles" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="BrandCode" />
+    </Key>
+    <Property Name="BrandCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BrandName" Type="nvarchar" MaxLength="100" />
+    <Property Name="BrandDesc" Type="nvarchar" MaxLength="256" />
+    <Property Name="Status" Type="smallint" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryCode" />
+    </Key>
+    <Property Name="CategoryCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CategoryDesc" Type="nvarchar" MaxLength="256" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Condition">
+    <Key>
+      <PropertyRef Name="ConditionCode" />
+    </Key>
+    <Property Name="ConditionCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ConditionName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MobilePro_SalesService.dbo.Expense' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Expense">
+    <Key>
+      <PropertyRef Name="ExpenseCode" />
+      <PropertyRef Name="ExpenseName" />
+    </Key>
+    <Property Name="ExpenseCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorCode" Type="int" />
+    <Property Name="ExpenseName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Charge" Type="decimal" Scale="2" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="256" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ExpenseVendors">
+    <Key>
+      <PropertyRef Name="VendorCode" />
+    </Key>
+    <Property Name="VendorCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Fault">
+    <Key>
+      <PropertyRef Name="FaultCode" />
+    </Key>
+    <Property Name="FaultCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FaultName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="OutSources">
+    <Key>
+      <PropertyRef Name="OutSourceCode" />
+    </Key>
+    <Property Name="OutSourceCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OutSourceName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="CategoryCode" />
+    </Key>
+    <Property Name="ProductCode" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ProductDesc" Type="nvarchar" MaxLength="256" />
+    <Property Name="CategoryCode" Type="int" Nullable="false" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="SalesBill">
+    <Key>
+      <PropertyRef Name="ReceiptNo" />
+    </Key>
+    <Property Name="ReceiptNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PaymentType" Type="nvarchar" MaxLength="20" />
+    <Property Name="ServiceDate" Type="datetime" />
+    <Property Name="DiscountAmount" Type="decimal" Scale="2" />
+    <Property Name="NetAmount" Type="decimal" Scale="2" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MobilePro_SalesService.dbo.SalesItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="SalesItems">
+    <Key>
+      <PropertyRef Name="ReceiptNo" />
+    </Key>
+    <Property Name="ReceiptNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CategoryCode" Type="int" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="SellingPrice" Type="decimal" Scale="2" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SalesPurchase">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="PurchaseDate" Type="datetime" />
+    <Property Name="TotalAmount" Type="decimal" Scale="2" />
+    <Property Name="VendorCode" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MobilePro_SalesService.dbo.SalesPurchaseItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="SalesPurchaseItems">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Name="OrderNo" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CategoryCode" Type="int" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="UnitCost" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="SalesStocks">
+    <Key>
+      <PropertyRef Name="CategoryCode" />
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Name="CategoryCode" Type="int" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="UnitPrice" Type="decimal" Scale="2" />
+    <Property Name="SellingPrice" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="security_Pages">
+    <Key>
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Name="PageID" Type="int" Nullable="false" />
+    <Property Name="PageParentID" Type="int" />
+    <Property Name="PageName" Type="nvarchar" MaxLength="80" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+    <Property Name="PageURL" Type="nvarchar" MaxLength="256" />
+    <Property Name="PageOrdinal" Type="int" />
+    <Property Name="IsMenu" Type="smallint" />
+  </EntityType>
+  <EntityType Name="security_RolePages">
+    <Key>
+      <PropertyRef Name="RoleID" />
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="PageID" Type="int" Nullable="false" />
+    <Property Name="IsHomePage" Type="smallint" />
+  </EntityType>
+  <EntityType Name="security_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="security_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServiceBill">
+    <Key>
+      <PropertyRef Name="ReceiptNo" />
+    </Key>
+    <Property Name="ReceiptNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContactNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModelNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="NatureFault" Type="nvarchar" MaxLength="100" />
+    <Property Name="StatusCode" Type="int" />
+    <Property Name="Condition" Type="nvarchar" MaxLength="500" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="PaymentType" Type="nvarchar" MaxLength="20" />
+    <Property Name="TechRemark" Type="nvarchar(max)" />
+    <Property Name="PasswordType" Type="nvarchar" MaxLength="20" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="ServiceDate" Type="datetime" />
+    <Property Name="BrandCode" Type="int" />
+    <Property Name="IMEINo" Type="nvarchar" MaxLength="50" />
+    <Property Name="OutSourceCode" Type="int" />
+    <Property Name="EstimateAmount" Type="decimal" Scale="2" />
+    <Property Name="NetAmount" Type="decimal" Scale="2" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="ReadyBy" Type="int" />
+    <Property Name="ReadyDate" Type="datetime" />
+    <Property Name="ActualCost" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="StaffExpense">
+    <Key>
+      <PropertyRef Name="TableKey" />
+    </Key>
+    <Property Name="TableKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StaffId" Type="int" Nullable="false" />
+    <Property Name="ExpenseDate" Type="datetime" />
+    <Property Name="ExpenseAmount" Type="float" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusCode" />
+    </Key>
+    <Property Name="StatusCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StatusName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="ContactNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vendors">
+    <Key>
+      <PropertyRef Name="VendorCode" />
+    </Key>
+    <Property Name="VendorCode" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="webpages_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ConfirmationToken" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsConfirmed" Type="bit" />
+    <Property Name="LastPasswordFailureDate" Type="datetime" />
+    <Property Name="PasswordFailuresSinceLastSuccess" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordChangedDate" Type="datetime" />
+    <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordVerificationToken" Type="nvarchar" MaxLength="128" />
+    <Property Name="PasswordVerificationTokenExpirationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="webpages_OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+    </Key>
+    <Property Name="Provider" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ProviderUserId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <Function Name="sp_frm_add_upd_Bill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ContactNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModelNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="NatureFault" Type="nvarchar" Mode="In" />
+    <Parameter Name="StatusCode" Type="int" Mode="In" />
+    <Parameter Name="Condition" Type="nvarchar" Mode="In" />
+    <Parameter Name="Remark" Type="nvarchar" Mode="In" />
+    <Parameter Name="PaymentType" Type="nvarchar" Mode="In" />
+    <Parameter Name="TechRemark" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="PasswordType" Type="nvarchar" Mode="In" />
+    <Parameter Name="Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceDate" Type="datetime" Mode="In" />
+    <Parameter Name="BrandCode" Type="int" Mode="In" />
+    <Parameter Name="IMEINo" Type="nvarchar" Mode="In" />
+    <Parameter Name="OutSourceCode" Type="int" Mode="In" />
+    <Parameter Name="EstimateAmount" Type="decimal" Mode="In" />
+    <Parameter Name="NetAmount" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Bill_ActualCost" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="ActualCost" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Brand" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BrandCode" Type="int" Mode="In" />
+    <Parameter Name="BrandName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BrandDesc" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Category" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="CategoryName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryDesc" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Condition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ConditionCode" Type="int" Mode="In" />
+    <Parameter Name="ConditionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Expense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VendorCode" Type="int" Mode="In" />
+    <Parameter Name="ExpenseCode" Type="int" Mode="In" />
+    <Parameter Name="ExpenseName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Charge" Type="decimal" Mode="In" />
+    <Parameter Name="Remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_ExpenseVendors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VendorCode" Type="int" Mode="In" />
+    <Parameter Name="VendorName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Fault" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FaultCode" Type="int" Mode="In" />
+    <Parameter Name="FaultName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_OutSources" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OutSourceCode" Type="int" Mode="In" />
+    <Parameter Name="OutSourceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Product" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="ProductDesc" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Sales_Bill" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="PaymentType" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceDate" Type="datetime" Mode="In" />
+    <Parameter Name="DiscountAmount" Type="decimal" Mode="In" />
+    <Parameter Name="NetAmount" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Sales_Bill_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="float" Mode="In" />
+    <Parameter Name="SellingPrice" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceBillNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceBillStatus" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Sales_Purchase" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="PurchaseDate" Type="datetime" Mode="In" />
+    <Parameter Name="VendorCode" Type="int" Mode="In" />
+    <Parameter Name="TotalAmount" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Sales_Purchase_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="float" Mode="In" />
+    <Parameter Name="UnitPrice" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Sales_Stock" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="float" Mode="In" />
+    <Parameter Name="UnitPrice" Type="decimal" Mode="In" />
+    <Parameter Name="SellingPrice" Type="decimal" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_StaffExpense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TableKey" Type="int" Mode="In" />
+    <Parameter Name="StaffId" Type="int" Mode="In" />
+    <Parameter Name="ExpenseDate" Type="datetime" Mode="In" />
+    <Parameter Name="ExpenseAmount" Type="float" Mode="In" />
+    <Parameter Name="Description" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_add_upd_Vendors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VendorCode" Type="int" Mode="In" />
+    <Parameter Name="VendorName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_Dashboard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CreatedDate" Type="datetime" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_del_Sales_Bill_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_del_Sales_Purchase_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Bills" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="BrandCode" Type="int" Mode="In" />
+    <Parameter Name="ModelNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceDate" Type="datetime" Mode="In" />
+    <Parameter Name="StatusCode" Type="int" Mode="In" />
+    <Parameter Name="OutSourceCode" Type="int" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ParmType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Bills_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="BrandCode" Type="int" Mode="In" />
+    <Parameter Name="ModelNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="StatusCode" Type="int" Mode="In" />
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="OutSourceCode" Type="int" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Brands" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BrandName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Categories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Category_Sales_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Condition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ConditionName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Daily_Sales_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Daily_Service_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Expense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ExpenseCode" Type="int" Mode="In" />
+    <Parameter Name="ExpenseName" Type="nvarchar" Mode="In" />
+    <Parameter Name="VendorCode" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ParmType" Type="int" Mode="In" />
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_ExpenseVendors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VendorName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Fault" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FaultName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Monthly_Sales_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_OutSources" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OutSourceName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_Brands" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_Categories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_Condition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_ExpenseVendors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_Fault" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_OutSources" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_Products" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Parm_Status" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Parm_Users" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_parm_Vendors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Product_Sales_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Products" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductDesc" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Products_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="ServiceDate" Type="datetime" Mode="In" />
+    <Parameter Name="CustomerName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ParmType" Type="int" Mode="In" />
+    <Parameter Name="PaymentType" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Bill_Details" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Bill_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="ProductCode" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Items_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyID" Type="int" Mode="In" />
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="Remarks" Type="nvarchar" Mode="In" />
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Purchase_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OrderNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Purchases" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VendorCode" Type="int" Mode="In" />
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="OrderNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ReceiptNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="PaymentType" Type="nvarchar" Mode="In" />
+    <Parameter Name="CreatedBy" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Stock_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="ProductDesc" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Sales_Stocks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryCode" Type="int" Mode="In" />
+    <Parameter Name="ProductCode" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Staff_Expense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StaffId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ParmType" Type="int" Mode="In" />
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Category_Sales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Details" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Details_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Expense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Product_Sales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Purchase" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Service_Details" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Service_Details_Report" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TransactionFrom" Type="datetime" Mode="In" />
+    <Parameter Name="TransactionTo" Type="datetime" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Service_Items" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Today_Service_Status" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="CustomerId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_get_Vendors" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VendorName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_Security_get_parm_Users" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_Security_get_UserHomePage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_Security_get_Users" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="IsActive" Type="smallint" Mode="In" />
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="PageName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_frm_Security_TreeViewMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="int" Mode="In" />
+    <Parameter Name="Menu" Type="varchar" Mode="In" />
+    <Parameter Name="ParentID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_frmSysUserGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UpdatedBy" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_test" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

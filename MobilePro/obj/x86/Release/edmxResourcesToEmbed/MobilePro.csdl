@@ -1,0 +1,1179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MSProModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Brands" EntityType="MSProModel.Brands" />
+    <EntitySet Name="Categories" EntityType="MSProModel.Categories" />
+    <EntitySet Name="Condition" EntityType="MSProModel.Condition" />
+    <EntitySet Name="Expense" EntityType="MSProModel.Expense" />
+    <EntitySet Name="ExpenseVendors" EntityType="MSProModel.ExpenseVendors" />
+    <EntitySet Name="Fault" EntityType="MSProModel.Fault" />
+    <EntitySet Name="OutSources" EntityType="MSProModel.OutSources" />
+    <EntitySet Name="Products" EntityType="MSProModel.Products" />
+    <EntitySet Name="SalesBill" EntityType="MSProModel.SalesBill" />
+    <EntitySet Name="SalesItems" EntityType="MSProModel.SalesItems" />
+    <EntitySet Name="SalesPurchase" EntityType="MSProModel.SalesPurchase" />
+    <EntitySet Name="SalesPurchaseItems" EntityType="MSProModel.SalesPurchaseItems" />
+    <EntitySet Name="SalesStocks" EntityType="MSProModel.SalesStocks" />
+    <EntitySet Name="security_Pages" EntityType="MSProModel.security_Pages" />
+    <EntitySet Name="security_RolePages" EntityType="MSProModel.security_RolePages" />
+    <EntitySet Name="security_Roles" EntityType="MSProModel.security_Roles" />
+    <EntitySet Name="security_UsersInRoles" EntityType="MSProModel.security_UsersInRoles" />
+    <EntitySet Name="StaffExpense" EntityType="MSProModel.StaffExpense" />
+    <EntitySet Name="Status" EntityType="MSProModel.Status" />
+    <EntitySet Name="UserProfile" EntityType="MSProModel.UserProfile" />
+    <EntitySet Name="Vendors" EntityType="MSProModel.Vendors" />
+    <EntitySet Name="webpages_Membership" EntityType="MSProModel.webpages_Membership" />
+    <EntitySet Name="webpages_OAuthMembership" EntityType="MSProModel.webpages_OAuthMembership" />
+    <EntitySet Name="webpages_Roles" EntityType="MSProModel.webpages_Roles" />
+    <FunctionImport Name="sp_frm_add_upd_Bill_ActualCost">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="ActualCost" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Brand">
+      <Parameter Name="BrandCode" Mode="In" Type="Int32" />
+      <Parameter Name="BrandName" Mode="In" Type="String" />
+      <Parameter Name="BrandDesc" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Category">
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="CategoryName" Mode="In" Type="String" />
+      <Parameter Name="CategoryDesc" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Condition">
+      <Parameter Name="ConditionCode" Mode="In" Type="Int32" />
+      <Parameter Name="ConditionName" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Expense">
+      <Parameter Name="VendorCode" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseCode" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseName" Mode="In" Type="String" />
+      <Parameter Name="Charge" Mode="In" Type="Decimal" />
+      <Parameter Name="Remarks" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_ExpenseVendors">
+      <Parameter Name="VendorCode" Mode="In" Type="Int32" />
+      <Parameter Name="VendorName" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Fault">
+      <Parameter Name="FaultCode" Mode="In" Type="Int32" />
+      <Parameter Name="FaultName" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_OutSources">
+      <Parameter Name="OutSourceCode" Mode="In" Type="Int32" />
+      <Parameter Name="OutSourceName" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Product">
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="ProductDesc" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Sales_Bill">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="PaymentType" Mode="In" Type="String" />
+      <Parameter Name="ServiceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="DiscountAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="NetAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Sales_Bill_Items">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Double" />
+      <Parameter Name="SellingPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="ServiceBillNo" Mode="In" Type="String" />
+      <Parameter Name="ServiceBillStatus" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Sales_Purchase">
+      <Parameter Name="OrderNo" Mode="In" Type="String" />
+      <Parameter Name="PurchaseDate" Mode="In" Type="DateTime" />
+      <Parameter Name="VendorCode" Mode="In" Type="Int32" />
+      <Parameter Name="TotalAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Sales_Purchase_Items">
+      <Parameter Name="OrderNo" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Double" />
+      <Parameter Name="UnitPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Sales_Stock">
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Double" />
+      <Parameter Name="UnitPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="SellingPrice" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_StaffExpense">
+      <Parameter Name="TableKey" Mode="In" Type="Int32" />
+      <Parameter Name="StaffId" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ExpenseAmount" Mode="In" Type="Double" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_add_upd_Vendors">
+      <Parameter Name="VendorCode" Mode="In" Type="Int32" />
+      <Parameter Name="VendorName" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="Boolean" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_Dashboard">
+      <Parameter Name="CreatedDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_del_Sales_Bill_Items">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_del_Sales_Purchase_Items">
+      <Parameter Name="OrderNo" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Brands" ReturnType="Collection(MSProModel.sp_frm_get_Brands_Result)">
+      <Parameter Name="BrandName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Categories" ReturnType="Collection(MSProModel.sp_frm_get_Categories_Result)">
+      <Parameter Name="CategoryName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Category_Sales_Report" ReturnType="Collection(MSProModel.sp_frm_get_Category_Sales_Report_Result)">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Condition" ReturnType="Collection(MSProModel.sp_frm_get_Condition_Result)">
+      <Parameter Name="ConditionName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Daily_Sales_Report" ReturnType="Collection(MSProModel.sp_frm_get_Daily_Sales_Report_Result)">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Expense" ReturnType="Collection(MSProModel.sp_frm_get_Expense_Result)">
+      <Parameter Name="ExpenseCode" Mode="In" Type="Int32" />
+      <Parameter Name="ExpenseName" Mode="In" Type="String" />
+      <Parameter Name="VendorCode" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="ParmType" Mode="In" Type="Int32" />
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_ExpenseVendors" ReturnType="Collection(MSProModel.sp_frm_get_ExpenseVendors_Result)">
+      <Parameter Name="VendorName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Fault" ReturnType="Collection(MSProModel.sp_frm_get_Fault_Result)">
+      <Parameter Name="FaultName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Monthly_Sales_Report" ReturnType="Collection(MSProModel.sp_frm_get_Monthly_Sales_Report_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_OutSources" ReturnType="Collection(MSProModel.sp_frm_get_OutSources_Result)">
+      <Parameter Name="OutSourceName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_Brands" ReturnType="Collection(MSProModel.sp_frm_get_parm_Brands_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_Categories" ReturnType="Collection(MSProModel.sp_frm_get_parm_Categories_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_Condition" ReturnType="Collection(MSProModel.sp_frm_get_parm_Condition_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_ExpenseVendors" ReturnType="Collection(MSProModel.sp_frm_get_parm_ExpenseVendors_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_Fault" ReturnType="Collection(MSProModel.sp_frm_get_parm_Fault_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_OutSources" ReturnType="Collection(MSProModel.sp_frm_get_parm_OutSources_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_Products" ReturnType="Collection(MSProModel.sp_frm_get_parm_Products_Result)">
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Parm_Status" ReturnType="Collection(MSProModel.sp_frm_get_Parm_Status_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Parm_Users" ReturnType="Collection(MSProModel.sp_frm_get_Parm_Users_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_parm_Vendors" ReturnType="Collection(MSProModel.sp_frm_get_parm_Vendors_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Product_Sales_Report" ReturnType="Collection(MSProModel.sp_frm_get_Product_Sales_Report_Result)">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Products" ReturnType="Collection(MSProModel.sp_frm_get_Products_Result)">
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductDesc" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Products_Report">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Result)">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="ServiceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="ParmType" Mode="In" Type="Int32" />
+      <Parameter Name="PaymentType" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Bill_Details" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Bill_Details_Result)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Bill_Items" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Bill_Items_Result)">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="ProductCode" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Items_Report">
+      <Parameter Name="CompanyID" Mode="In" Type="Int32" />
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="Remarks" Mode="In" Type="String" />
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Purchase_Items" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Purchase_Items_Result)">
+      <Parameter Name="OrderNo" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Purchases" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Purchases_Result)">
+      <Parameter Name="VendorCode" Mode="In" Type="Int32" />
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="OrderNo" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Report" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Report_Result)">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="PaymentType" Mode="In" Type="String" />
+      <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Stock_Items" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Stock_Items_Result)">
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="ProductDesc" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Sales_Stocks" ReturnType="Collection(MSProModel.sp_frm_get_Sales_Stocks_Result)">
+      <Parameter Name="CategoryCode" Mode="In" Type="Int32" />
+      <Parameter Name="ProductCode" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Staff_Expense" ReturnType="Collection(MSProModel.sp_frm_get_Staff_Expense_Result)">
+      <Parameter Name="StaffId" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="ParmType" Mode="In" Type="Int32" />
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Category_Sales" ReturnType="Collection(MSProModel.sp_frm_get_Today_Category_Sales_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Details" ReturnType="Collection(MSProModel.sp_frm_get_Today_Details_Result)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Details_Report" ReturnType="Collection(MSProModel.sp_frm_get_Today_Details_Report_Result)">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Expense" ReturnType="Collection(MSProModel.sp_frm_get_Today_Expense_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Product_Sales" ReturnType="Collection(MSProModel.sp_frm_get_Today_Product_Sales_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Purchase" ReturnType="Collection(MSProModel.sp_frm_get_Today_Purchase_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Service_Details" ReturnType="Collection(MSProModel.sp_frm_get_Today_Service_Details_Result)">
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Service_Items" ReturnType="Collection(MSProModel.sp_frm_get_Today_Service_Items_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Service_Status" ReturnType="Collection(MSProModel.sp_frm_get_Today_Service_Status_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Vendors" ReturnType="Collection(MSProModel.sp_frm_get_Vendors_Result)">
+      <Parameter Name="VendorName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_Security_get_parm_Users" ReturnType="Collection(MSProModel.sp_frm_Security_get_parm_Users_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_Security_get_UserHomePage" ReturnType="Collection(String)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_Security_get_Users" ReturnType="Collection(MSProModel.sp_frm_Security_get_Users_Result)">
+      <Parameter Name="FirstName" Mode="In" Type="String" />
+      <Parameter Name="IsActive" Mode="In" Type="Int16" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_Security_TreeViewMenu" ReturnType="Collection(MSProModel.sp_frm_Security_TreeViewMenu_Result)">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="Menu" Mode="In" Type="String" />
+      <Parameter Name="ParentID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frmSysUserGet" ReturnType="Collection(MSProModel.sp_frmSysUserGet_Result)">
+      <Parameter Name="UpdatedBy" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_test">
+      <Parameter Name="UserID" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="ServiceBill" EntityType="MSProModel.ServiceBill" />
+    <FunctionImport Name="sp_frm_add_upd_Bill">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="ContactNo" Mode="In" Type="String" />
+      <Parameter Name="ModelNo" Mode="In" Type="String" />
+      <Parameter Name="NatureFault" Mode="In" Type="String" />
+      <Parameter Name="StatusCode" Mode="In" Type="Int32" />
+      <Parameter Name="Condition" Mode="In" Type="String" />
+      <Parameter Name="Remark" Mode="In" Type="String" />
+      <Parameter Name="PaymentType" Mode="In" Type="String" />
+      <Parameter Name="TechRemark" Mode="In" Type="String" />
+      <Parameter Name="PasswordType" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="ServiceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="BrandCode" Mode="In" Type="Int32" />
+      <Parameter Name="IMEINo" Mode="In" Type="String" />
+      <Parameter Name="OutSourceCode" Mode="In" Type="Int32" />
+      <Parameter Name="EstimateAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="NetAmount" Mode="In" Type="Decimal" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Bills" ReturnType="Collection(MSProModel.sp_frm_get_Bills_Result)">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="BrandCode" Mode="In" Type="Int32" />
+      <Parameter Name="ModelNo" Mode="In" Type="String" />
+      <Parameter Name="ServiceDate" Mode="In" Type="DateTime" />
+      <Parameter Name="StatusCode" Mode="In" Type="Int32" />
+      <Parameter Name="OutSourceCode" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerName" Mode="In" Type="String" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+      <Parameter Name="ParmType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Bills_Report" ReturnType="Collection(MSProModel.sp_frm_get_Bills_Report_Result)">
+      <Parameter Name="ReceiptNo" Mode="In" Type="String" />
+      <Parameter Name="BrandCode" Mode="In" Type="Int32" />
+      <Parameter Name="ModelNo" Mode="In" Type="String" />
+      <Parameter Name="StatusCode" Mode="In" Type="Int32" />
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="OutSourceCode" Mode="In" Type="Int32" />
+      <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Daily_Service_Report" ReturnType="Collection(MSProModel.sp_frm_get_Daily_Service_Report_Result)">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_frm_get_Today_Service_Details_Report" ReturnType="Collection(MSProModel.sp_frm_get_Today_Service_Details_Report_Result)">
+      <Parameter Name="TransactionFrom" Mode="In" Type="DateTime" />
+      <Parameter Name="TransactionTo" Mode="In" Type="DateTime" />
+      <Parameter Name="CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+      <Parameter Name="PageName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="BrandCode" />
+    </Key>
+    <Property Type="Int32" Name="BrandCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="BrandName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BrandDesc" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryCode" />
+    </Key>
+    <Property Type="Int32" Name="CategoryCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="CategoryName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CategoryDesc" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="Condition">
+    <Key>
+      <PropertyRef Name="ConditionCode" />
+    </Key>
+    <Property Type="Int32" Name="ConditionCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="ConditionName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="Expense">
+    <Key>
+      <PropertyRef Name="ExpenseCode" />
+      <PropertyRef Name="ExpenseName" />
+    </Key>
+    <Property Type="Int32" Name="ExpenseCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="VendorCode" />
+    <Property Type="String" Name="ExpenseName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Charge" Precision="18" Scale="2" />
+    <Property Type="String" Name="Remarks" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="ExpenseVendors">
+    <Key>
+      <PropertyRef Name="VendorCode" />
+    </Key>
+    <Property Type="Int32" Name="VendorCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="VendorName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="Fault">
+    <Key>
+      <PropertyRef Name="FaultCode" />
+    </Key>
+    <Property Type="Int32" Name="FaultCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="FaultName" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="OutSources">
+    <Key>
+      <PropertyRef Name="OutSourceCode" />
+    </Key>
+    <Property Type="Int32" Name="OutSourceCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="OutSourceName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductCode" />
+      <PropertyRef Name="CategoryCode" />
+    </Key>
+    <Property Type="String" Name="ProductCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProductDesc" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryCode" Nullable="false" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="SalesBill">
+    <Key>
+      <PropertyRef Name="ReceiptNo" />
+    </Key>
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomerName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ServiceDate" Precision="3" />
+    <Property Type="Decimal" Name="DiscountAmount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="SalesItems">
+    <Key>
+      <PropertyRef Name="ReceiptNo" />
+    </Key>
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryCode" />
+    <Property Type="String" Name="ProductCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Quantity" />
+    <Property Type="Decimal" Name="SellingPrice" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="SalesPurchase">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Type="String" Name="OrderNo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PurchaseDate" Precision="3" />
+    <Property Type="Decimal" Name="TotalAmount" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="VendorCode" />
+  </EntityType>
+  <EntityType Name="SalesPurchaseItems">
+    <Key>
+      <PropertyRef Name="OrderNo" />
+    </Key>
+    <Property Type="String" Name="OrderNo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CategoryCode" />
+    <Property Type="String" Name="ProductCode" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Quantity" />
+    <Property Type="Decimal" Name="UnitCost" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="SalesStocks">
+    <Key>
+      <PropertyRef Name="CategoryCode" />
+      <PropertyRef Name="ProductCode" />
+    </Key>
+    <Property Type="Int32" Name="CategoryCode" Nullable="false" />
+    <Property Type="String" Name="ProductCode" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Quantity" />
+    <Property Type="Decimal" Name="UnitPrice" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SellingPrice" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="security_Pages">
+    <Key>
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Type="Int32" Name="PageID" Nullable="false" />
+    <Property Type="Int32" Name="PageParentID" />
+    <Property Type="String" Name="PageName" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PageURL" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="PageOrdinal" />
+    <Property Type="Int16" Name="IsMenu" />
+  </EntityType>
+  <EntityType Name="security_RolePages">
+    <Key>
+      <PropertyRef Name="RoleID" />
+      <PropertyRef Name="PageID" />
+    </Key>
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+    <Property Type="Int32" Name="PageID" Nullable="false" />
+    <Property Type="Int16" Name="IsHomePage" />
+  </EntityType>
+  <EntityType Name="security_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="RoleId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="security_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StaffExpense">
+    <Key>
+      <PropertyRef Name="TableKey" />
+    </Key>
+    <Property Type="Int32" Name="TableKey" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="StaffId" Nullable="false" />
+    <Property Type="DateTime" Name="ExpenseDate" Precision="3" />
+    <Property Type="Double" Name="ExpenseAmount" />
+    <Property Type="String" Name="Description" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusCode" />
+    </Key>
+    <Property Type="Int32" Name="StatusCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="UserName" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="Vendors">
+    <Key>
+      <PropertyRef Name="VendorCode" />
+    </Key>
+    <Property Type="Int32" Name="VendorCode" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="VendorName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="Status" />
+  </EntityType>
+  <EntityType Name="webpages_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Precision="3" />
+    <Property Type="String" Name="ConfirmationToken" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsConfirmed" />
+    <Property Type="DateTime" Name="LastPasswordFailureDate" Precision="3" />
+    <Property Type="Int32" Name="PasswordFailuresSinceLastSuccess" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PasswordChangedDate" Precision="3" />
+    <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordVerificationToken" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="PasswordVerificationTokenExpirationDate" Precision="3" />
+  </EntityType>
+  <EntityType Name="webpages_OAuthMembership">
+    <Key>
+      <PropertyRef Name="Provider" />
+      <PropertyRef Name="ProviderUserId" />
+    </Key>
+    <Property Type="String" Name="Provider" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ProviderUserId" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+  </EntityType>
+  <EntityType Name="webpages_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="RoleId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="sp_frm_get_Brands_Result">
+    <Property Type="Int32" Name="BrandCode" Nullable="false" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BrandDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Categories_Result">
+    <Property Type="Int32" Name="CategoryCode" Nullable="false" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CategoryDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Category_Sales_Report_Result">
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Product" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="Qty" Nullable="true" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Condition_Result">
+    <Property Type="Int32" Name="ConditionCode" Nullable="false" />
+    <Property Type="String" Name="ConditionName" Nullable="true" MaxLength="500" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Daily_Sales_Report_Result">
+    <Property Type="Decimal" Name="SaleByCash" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SaleByNETS" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Expense" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalDiscount" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Expense_Result">
+    <Property Type="Int32" Name="ExpenseCode" Nullable="false" />
+    <Property Type="String" Name="ExpenseName" Nullable="false" MaxLength="100" />
+    <Property Type="Decimal" Name="Charge" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="VendorCode" Nullable="true" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="UserID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_ExpenseVendors_Result">
+    <Property Type="Int32" Name="VendorCode" Nullable="false" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Fault_Result">
+    <Property Type="Int32" Name="FaultCode" Nullable="false" />
+    <Property Type="String" Name="FaultName" Nullable="true" MaxLength="500" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Monthly_Sales_Report_Result">
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="Month" Nullable="false" MaxLength="256" />
+    <Property Type="Decimal" Name="ByCash" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ByNETS" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Expense" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Total" Nullable="true" Precision="20" Scale="2" />
+    <Property Type="Decimal" Name="TotalDiscount" Nullable="false" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_OutSources_Result">
+    <Property Type="Int32" Name="OutSourceCode" Nullable="false" />
+    <Property Type="String" Name="OutSourceName" Nullable="true" MaxLength="100" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_Brands_Result">
+    <Property Type="Int32" Name="BrandCode" Nullable="true" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_Categories_Result">
+    <Property Type="Int32" Name="CategoryCode" Nullable="true" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_Condition_Result">
+    <Property Type="Int32" Name="ConditionCode" Nullable="true" />
+    <Property Type="String" Name="ConditionName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_ExpenseVendors_Result">
+    <Property Type="Int32" Name="VendorCode" Nullable="true" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_Fault_Result">
+    <Property Type="Int32" Name="FaultCode" Nullable="true" />
+    <Property Type="String" Name="FaultName" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_OutSources_Result">
+    <Property Type="Int32" Name="OutSourceCode" Nullable="true" />
+    <Property Type="String" Name="OutSourceName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_Products_Result">
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductDesc" Nullable="true" MaxLength="256" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Parm_Status_Result">
+    <Property Type="Int32" Name="StatusCode" Nullable="false" />
+    <Property Type="String" Name="StatusName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Parm_Users_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_parm_Vendors_Result">
+    <Property Type="Int32" Name="VendorCode" Nullable="true" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Product_Sales_Report_Result">
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CategoryCode" Nullable="true" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="SellingPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="true" Precision="29" Scale="2" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="CreatedTime" Nullable="true" MaxLength="7" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Products_Result">
+    <Property Type="String" Name="ProductCode" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ProductDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="CategoryCode" Nullable="false" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Result">
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="PaymentType" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="ServiceDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Items" Nullable="true" />
+    <Property Type="Decimal" Name="DiscountAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Bill_Details_Result">
+    <Property Type="Double" Name="SaleByCash" Nullable="true" />
+    <Property Type="Double" Name="SaleByNETS" Nullable="true" />
+    <Property Type="Double" Name="Expense" Nullable="true" />
+    <Property Type="Double" Name="NetAmount" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Bill_Items_Result">
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CategoryCode" Nullable="true" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="SellingPrice" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Purchase_Items_Result">
+    <Property Type="String" Name="OrderNo" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="CategoryCode" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="UnitCost" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Purchases_Result">
+    <Property Type="String" Name="OrderNo" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="PurchaseDate" Nullable="true" Precision="23" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Int32" Name="VendorCode" Nullable="true" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Report_Result">
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="PaymentType" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="ServiceDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Items" Nullable="true" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="38" Scale="2" />
+    <Property Type="Decimal" Name="DiscountAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Stock_Items_Result">
+    <Property Type="String" Name="ItemCode" Nullable="true" MaxLength="61" />
+    <Property Type="String" Name="ItemName" Nullable="true" MaxLength="358" />
+    <Property Type="Double" Name="Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="UnitPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SellingPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Sales_Stocks_Result">
+    <Property Type="Int32" Name="CategoryCode" Nullable="true" />
+    <Property Type="String" Name="ProductCode" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CategoryName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ProductDesc" Nullable="true" MaxLength="256" />
+    <Property Type="Double" Name="Quantity" Nullable="true" />
+    <Property Type="Decimal" Name="UnitPrice" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SellingPrice" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Staff_Expense_Result">
+    <Property Type="Int32" Name="TableKey" Nullable="false" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ExpenseDate" Nullable="true" MaxLength="20" />
+    <Property Type="Double" Name="ExpenseAmount" Nullable="true" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Category_Sales_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="62" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Details_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="62" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Details_Report_Result">
+    <Property Type="Decimal" Name="SaleByCash" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="SaleByNETS" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Expense" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="TotalDiscount" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Expense_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="64" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Product_Sales_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="61" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="false" MaxLength="46" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Purchase_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="65" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="col4" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Service_Details_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="64" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Service_Items_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="68" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col5" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Service_Status_Result">
+    <Property Type="String" Name="col1" Nullable="false" MaxLength="63" />
+    <Property Type="String" Name="col2" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col3" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="col4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="col5" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="col6" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Vendors_Result">
+    <Property Type="Int32" Name="VendorCode" Nullable="false" />
+    <Property Type="String" Name="VendorName" Nullable="true" MaxLength="100" />
+    <Property Type="Int16" Name="Status" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_Security_get_parm_Users_Result">
+    <Property Type="Int32" Name="UserID" Nullable="true" />
+    <Property Type="String" Name="UserName" Nullable="true" MaxLength="102" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_Security_get_Users_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="UserName" Nullable="true" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" />
+    <Property Type="Boolean" Name="IsConfirmed" Nullable="true" />
+    <Property Type="String" Name="Roles" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_Security_TreeViewMenu_Result">
+    <Property Type="Int32" Name="PageID" Nullable="false" />
+    <Property Type="String" Name="PageTitle" Nullable="true" MaxLength="256" />
+    <Property Type="String" Name="PageURL" Nullable="true" MaxLength="256" />
+    <Property Type="Int32" Name="ChildNodeCount" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_frmSysUserGet_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ConfirmationToken" Nullable="true" MaxLength="128" />
+    <Property Type="Boolean" Name="IsConfirmed" Nullable="true" />
+    <Property Type="DateTime" Name="LastPasswordFailureDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="PasswordFailuresSinceLastSuccess" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="128" />
+    <Property Type="DateTime" Name="PasswordChangedDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" />
+    <Property Type="String" Name="PasswordVerificationToken" Nullable="true" MaxLength="128" />
+    <Property Type="DateTime" Name="PasswordVerificationTokenExpirationDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="ServiceBill">
+    <Key>
+      <PropertyRef Name="ReceiptNo" />
+    </Key>
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomerName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ModelNo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="NatureFault" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="StatusCode" />
+    <Property Type="String" Name="Condition" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Remark" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PaymentType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TechRemark" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PasswordType" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Password" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ServiceDate" Precision="3" />
+    <Property Type="Int32" Name="BrandCode" />
+    <Property Type="String" Name="IMEINo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OutSourceCode" />
+    <Property Type="Decimal" Name="EstimateAmount" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="CreatedBy" />
+    <Property Type="DateTime" Name="CreatedDate" Precision="3" />
+    <Property Type="Int32" Name="UpdatedBy" />
+    <Property Type="DateTime" Name="UpdatedDate" Precision="3" />
+    <Property Type="Int32" Name="ReadyBy" />
+    <Property Type="DateTime" Name="ReadyDate" Precision="3" />
+    <Property Type="Decimal" Name="ActualCost" Precision="18" Scale="2" />
+  </EntityType>
+  <ComplexType Name="sp_frm_get_Bills_Result">
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ContactNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ModelNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NatureFault" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="StatusCode" Nullable="true" />
+    <Property Type="String" Name="Condition" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="PaymentType" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TechRemark" Nullable="true" />
+    <Property Type="String" Name="PasswordType" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ServiceDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="BrandCode" Nullable="true" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="IMEINo" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="OutSourceCode" Nullable="true" />
+    <Property Type="String" Name="OutSourceName" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="EstimateAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ReadyBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="ReadyDate" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Bills_Report_Result">
+    <Property Type="String" Name="ReceiptNo" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="CustomerName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ContactNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ModelNo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="NatureFault" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="StatusCode" Nullable="true" />
+    <Property Type="String" Name="Condition" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="Remark" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="PaymentType" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TechRemark" Nullable="true" />
+    <Property Type="String" Name="PasswordType" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="ServiceDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="BrandCode" Nullable="true" />
+    <Property Type="String" Name="BrandName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="IMEINo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="OutSourceName" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="EstimateAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ActualCost" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="String" Name="CreatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="ReadyBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="CreatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UpdatedBy" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="UpdatedDate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="StatusName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Daily_Service_Report_Result">
+    <Property Type="Decimal" Name="EstimatedAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="CollectedAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Discount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ByCash" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="ByNETS" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="NetAmount" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="sp_frm_get_Today_Service_Details_Report_Result">
+    <Property Type="Decimal" Name="EstimatedAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="CollectedAmount" Nullable="true" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Discount" Nullable="true" Precision="18" Scale="2" />
+  </ComplexType>
+</Schema>

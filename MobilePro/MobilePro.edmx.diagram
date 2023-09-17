@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4a324156d4cd46fea3e17085acfc67f5" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="MSProModel.Acc_SalesBill" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.Acc_SalesPayments" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.Acc_Vendors" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MSProModel.Brands" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.Categories" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MSProModel.Colors" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.Company" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MSProModel.CompanyUsers" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MSProModel.Condition" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MSProModel.Employees" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.ExpenseVendors" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="MSProModel.Fault" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MSProModel.Items" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MSProModel.Models" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.OutSources" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MSProModel.Products" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MSProModel.SalesBill" Width="1.5" PointX="6.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MSProModel.SalesStocks" Width="1.5" PointX="10.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MSProModel.security_Pages" Width="1.5" PointX="8.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MSProModel.security_RolePages" Width="1.5" PointX="10.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MSProModel.security_Roles" Width="1.5" PointX="0.75" PointY="11.75" />
+        <EntityTypeShape EntityType="MSProModel.security_UsersInRoles" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.ServiceBill" Width="1.5" PointX="12.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MSProModel.StaffExpense" Width="1.5" PointX="12.75" PointY="11.75" />
+        <EntityTypeShape EntityType="MSProModel.Status" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.Stocks" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MSProModel.UserProfile" Width="1.5" PointX="2.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MSProModel.Vendors" Width="1.5" PointX="14.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MSProModel.webpages_OAuthMembership" Width="1.5" PointX="4.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MSProModel.webpages_Roles" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MSProModel.Acc_SalesItems" Width="1.5" PointX="6.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MSProModel.Expense" Width="1.5" PointX="8.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MSProModel.Purchase" Width="1.5" PointX="14.75" PointY="9.75" />
+        <EntityTypeShape EntityType="MSProModel.PurchaseItems" Width="1.5" PointX="10.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MSProModel.SalesItems" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="MSProModel.SalesPurchase" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MSProModel.SalesPurchaseItems" Width="1.5" PointX="16.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MSProModel.ServiceItems" Width="1.5" PointX="16.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MSProModel.webpages_Membership" Width="1.5" PointX="16.75" PointY="11.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

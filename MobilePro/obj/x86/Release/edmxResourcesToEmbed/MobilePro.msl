@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MSProModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="MSProModel.Brands">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="BrandDesc" ColumnName="BrandDesc" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="MSProModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Condition">
+      <EntityTypeMapping TypeName="MSProModel.Condition">
+        <MappingFragment StoreEntitySet="Condition">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ConditionName" ColumnName="ConditionName" />
+          <ScalarProperty Name="ConditionCode" ColumnName="ConditionCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Expense">
+      <EntityTypeMapping TypeName="MSProModel.Expense">
+        <MappingFragment StoreEntitySet="Expense">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Charge" ColumnName="Charge" />
+          <ScalarProperty Name="ExpenseName" ColumnName="ExpenseName" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="ExpenseCode" ColumnName="ExpenseCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpenseVendors">
+      <EntityTypeMapping TypeName="MSProModel.ExpenseVendors">
+        <MappingFragment StoreEntitySet="ExpenseVendors">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fault">
+      <EntityTypeMapping TypeName="MSProModel.Fault">
+        <MappingFragment StoreEntitySet="Fault">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="FaultName" ColumnName="FaultName" />
+          <ScalarProperty Name="FaultCode" ColumnName="FaultCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutSources">
+      <EntityTypeMapping TypeName="MSProModel.OutSources">
+        <MappingFragment StoreEntitySet="OutSources">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OutSourceName" ColumnName="OutSourceName" />
+          <ScalarProperty Name="OutSourceCode" ColumnName="OutSourceCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="MSProModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesBill">
+      <EntityTypeMapping TypeName="MSProModel.SalesBill">
+        <MappingFragment StoreEntitySet="SalesBill">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesItems">
+      <EntityTypeMapping TypeName="MSProModel.SalesItems">
+        <MappingFragment StoreEntitySet="SalesItems">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesPurchase">
+      <EntityTypeMapping TypeName="MSProModel.SalesPurchase">
+        <MappingFragment StoreEntitySet="SalesPurchase">
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesPurchaseItems">
+      <EntityTypeMapping TypeName="MSProModel.SalesPurchaseItems">
+        <MappingFragment StoreEntitySet="SalesPurchaseItems">
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesStocks">
+      <EntityTypeMapping TypeName="MSProModel.SalesStocks">
+        <MappingFragment StoreEntitySet="SalesStocks">
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_Pages">
+      <EntityTypeMapping TypeName="MSProModel.security_Pages">
+        <MappingFragment StoreEntitySet="security_Pages">
+          <ScalarProperty Name="IsMenu" ColumnName="IsMenu" />
+          <ScalarProperty Name="PageOrdinal" ColumnName="PageOrdinal" />
+          <ScalarProperty Name="PageURL" ColumnName="PageURL" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageParentID" ColumnName="PageParentID" />
+          <ScalarProperty Name="PageID" ColumnName="PageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_RolePages">
+      <EntityTypeMapping TypeName="MSProModel.security_RolePages">
+        <MappingFragment StoreEntitySet="security_RolePages">
+          <ScalarProperty Name="IsHomePage" ColumnName="IsHomePage" />
+          <ScalarProperty Name="PageID" ColumnName="PageID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_Roles">
+      <EntityTypeMapping TypeName="MSProModel.security_Roles">
+        <MappingFragment StoreEntitySet="security_Roles">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="security_UsersInRoles">
+      <EntityTypeMapping TypeName="MSProModel.security_UsersInRoles">
+        <MappingFragment StoreEntitySet="security_UsersInRoles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffExpense">
+      <EntityTypeMapping TypeName="MSProModel.StaffExpense">
+        <MappingFragment StoreEntitySet="StaffExpense">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ExpenseAmount" ColumnName="ExpenseAmount" />
+          <ScalarProperty Name="ExpenseDate" ColumnName="ExpenseDate" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="TableKey" ColumnName="TableKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="MSProModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfile">
+      <EntityTypeMapping TypeName="MSProModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="MSProModel.Vendors">
+        <MappingFragment StoreEntitySet="Vendors">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_Membership">
+      <EntityTypeMapping TypeName="MSProModel.webpages_Membership">
+        <MappingFragment StoreEntitySet="webpages_Membership">
+          <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+          <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+          <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_OAuthMembership">
+      <EntityTypeMapping TypeName="MSProModel.webpages_OAuthMembership">
+        <MappingFragment StoreEntitySet="webpages_OAuthMembership">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderUserId" ColumnName="ProviderUserId" />
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="webpages_Roles">
+      <EntityTypeMapping TypeName="MSProModel.webpages_Roles">
+        <MappingFragment StoreEntitySet="webpages_Roles">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Bill_ActualCost" FunctionName="MSProModel.Store.sp_frm_add_upd_Bill_ActualCost" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Brand" FunctionName="MSProModel.Store.sp_frm_add_upd_Brand" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Category" FunctionName="MSProModel.Store.sp_frm_add_upd_Category" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Condition" FunctionName="MSProModel.Store.sp_frm_add_upd_Condition" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Expense" FunctionName="MSProModel.Store.sp_frm_add_upd_Expense" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_ExpenseVendors" FunctionName="MSProModel.Store.sp_frm_add_upd_ExpenseVendors" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Fault" FunctionName="MSProModel.Store.sp_frm_add_upd_Fault" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_OutSources" FunctionName="MSProModel.Store.sp_frm_add_upd_OutSources" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Product" FunctionName="MSProModel.Store.sp_frm_add_upd_Product" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Sales_Bill" FunctionName="MSProModel.Store.sp_frm_add_upd_Sales_Bill" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Sales_Bill_Items" FunctionName="MSProModel.Store.sp_frm_add_upd_Sales_Bill_Items" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Sales_Purchase" FunctionName="MSProModel.Store.sp_frm_add_upd_Sales_Purchase" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Sales_Purchase_Items" FunctionName="MSProModel.Store.sp_frm_add_upd_Sales_Purchase_Items" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Sales_Stock" FunctionName="MSProModel.Store.sp_frm_add_upd_Sales_Stock" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_StaffExpense" FunctionName="MSProModel.Store.sp_frm_add_upd_StaffExpense" />
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Vendors" FunctionName="MSProModel.Store.sp_frm_add_upd_Vendors" />
+    <FunctionImportMapping FunctionImportName="sp_frm_Dashboard" FunctionName="MSProModel.Store.sp_frm_Dashboard" />
+    <FunctionImportMapping FunctionImportName="sp_frm_del_Sales_Bill_Items" FunctionName="MSProModel.Store.sp_frm_del_Sales_Bill_Items" />
+    <FunctionImportMapping FunctionImportName="sp_frm_del_Sales_Purchase_Items" FunctionName="MSProModel.Store.sp_frm_del_Sales_Purchase_Items" />
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Brands" FunctionName="MSProModel.Store.sp_frm_get_Brands">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Brands_Result">
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="BrandDesc" ColumnName="BrandDesc" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Categories" FunctionName="MSProModel.Store.sp_frm_get_Categories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Categories_Result">
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryDesc" ColumnName="CategoryDesc" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Category_Sales_Report" FunctionName="MSProModel.Store.sp_frm_get_Category_Sales_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Category_Sales_Report_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Condition" FunctionName="MSProModel.Store.sp_frm_get_Condition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Condition_Result">
+          <ScalarProperty Name="ConditionCode" ColumnName="ConditionCode" />
+          <ScalarProperty Name="ConditionName" ColumnName="ConditionName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Daily_Sales_Report" FunctionName="MSProModel.Store.sp_frm_get_Daily_Sales_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Daily_Sales_Report_Result">
+          <ScalarProperty Name="SaleByCash" ColumnName="SaleByCash" />
+          <ScalarProperty Name="SaleByNETS" ColumnName="SaleByNETS" />
+          <ScalarProperty Name="Expense" ColumnName="Expense" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Expense" FunctionName="MSProModel.Store.sp_frm_get_Expense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Expense_Result">
+          <ScalarProperty Name="ExpenseCode" ColumnName="ExpenseCode" />
+          <ScalarProperty Name="ExpenseName" ColumnName="ExpenseName" />
+          <ScalarProperty Name="Charge" ColumnName="Charge" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_ExpenseVendors" FunctionName="MSProModel.Store.sp_frm_get_ExpenseVendors">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_ExpenseVendors_Result">
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Fault" FunctionName="MSProModel.Store.sp_frm_get_Fault">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Fault_Result">
+          <ScalarProperty Name="FaultCode" ColumnName="FaultCode" />
+          <ScalarProperty Name="FaultName" ColumnName="FaultName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Monthly_Sales_Report" FunctionName="MSProModel.Store.sp_frm_get_Monthly_Sales_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Monthly_Sales_Report_Result">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="ByCash" ColumnName="ByCash" />
+          <ScalarProperty Name="ByNETS" ColumnName="ByNETS" />
+          <ScalarProperty Name="Expense" ColumnName="Expense" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_OutSources" FunctionName="MSProModel.Store.sp_frm_get_OutSources">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_OutSources_Result">
+          <ScalarProperty Name="OutSourceCode" ColumnName="OutSourceCode" />
+          <ScalarProperty Name="OutSourceName" ColumnName="OutSourceName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_Brands" FunctionName="MSProModel.Store.sp_frm_get_parm_Brands">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_Brands_Result">
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_Categories" FunctionName="MSProModel.Store.sp_frm_get_parm_Categories">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_Categories_Result">
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_Condition" FunctionName="MSProModel.Store.sp_frm_get_parm_Condition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_Condition_Result">
+          <ScalarProperty Name="ConditionCode" ColumnName="ConditionCode" />
+          <ScalarProperty Name="ConditionName" ColumnName="ConditionName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_ExpenseVendors" FunctionName="MSProModel.Store.sp_frm_get_parm_ExpenseVendors">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_ExpenseVendors_Result">
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_Fault" FunctionName="MSProModel.Store.sp_frm_get_parm_Fault">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_Fault_Result">
+          <ScalarProperty Name="FaultCode" ColumnName="FaultCode" />
+          <ScalarProperty Name="FaultName" ColumnName="FaultName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_OutSources" FunctionName="MSProModel.Store.sp_frm_get_parm_OutSources">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_OutSources_Result">
+          <ScalarProperty Name="OutSourceCode" ColumnName="OutSourceCode" />
+          <ScalarProperty Name="OutSourceName" ColumnName="OutSourceName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_Products" FunctionName="MSProModel.Store.sp_frm_get_parm_Products">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_Products_Result">
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Parm_Status" FunctionName="MSProModel.Store.sp_frm_get_Parm_Status">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Parm_Status_Result">
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Parm_Users" FunctionName="MSProModel.Store.sp_frm_get_Parm_Users">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Parm_Users_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_parm_Vendors" FunctionName="MSProModel.Store.sp_frm_get_parm_Vendors">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_parm_Vendors_Result">
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Product_Sales_Report" FunctionName="MSProModel.Store.sp_frm_get_Product_Sales_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Product_Sales_Report_Result">
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Products" FunctionName="MSProModel.Store.sp_frm_get_Products">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Products_Result">
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Products_Report" FunctionName="MSProModel.Store.sp_frm_get_Products_Report" />
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales" FunctionName="MSProModel.Store.sp_frm_get_Sales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Result">
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Bill_Details" FunctionName="MSProModel.Store.sp_frm_get_Sales_Bill_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Bill_Details_Result">
+          <ScalarProperty Name="SaleByCash" ColumnName="SaleByCash" />
+          <ScalarProperty Name="SaleByNETS" ColumnName="SaleByNETS" />
+          <ScalarProperty Name="Expense" ColumnName="Expense" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Bill_Items" FunctionName="MSProModel.Store.sp_frm_get_Sales_Bill_Items">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Bill_Items_Result">
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Items_Report" FunctionName="MSProModel.Store.sp_frm_get_Sales_Items_Report" />
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Purchase_Items" FunctionName="MSProModel.Store.sp_frm_get_Sales_Purchase_Items">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Purchase_Items_Result">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Purchases" FunctionName="MSProModel.Store.sp_frm_get_Sales_Purchases">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Purchases_Result">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Report" FunctionName="MSProModel.Store.sp_frm_get_Sales_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Report_Result">
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="Items" ColumnName="Items" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Stock_Items" FunctionName="MSProModel.Store.sp_frm_get_Sales_Stock_Items">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Stock_Items_Result">
+          <ScalarProperty Name="ItemCode" ColumnName="ItemCode" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Sales_Stocks" FunctionName="MSProModel.Store.sp_frm_get_Sales_Stocks">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Sales_Stocks_Result">
+          <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ProductDesc" ColumnName="ProductDesc" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="SellingPrice" ColumnName="SellingPrice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Staff_Expense" FunctionName="MSProModel.Store.sp_frm_get_Staff_Expense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Staff_Expense_Result">
+          <ScalarProperty Name="TableKey" ColumnName="TableKey" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="ExpenseDate" ColumnName="ExpenseDate" />
+          <ScalarProperty Name="ExpenseAmount" ColumnName="ExpenseAmount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Category_Sales" FunctionName="MSProModel.Store.sp_frm_get_Today_Category_Sales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Category_Sales_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Details" FunctionName="MSProModel.Store.sp_frm_get_Today_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Details_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Details_Report" FunctionName="MSProModel.Store.sp_frm_get_Today_Details_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Details_Report_Result">
+          <ScalarProperty Name="SaleByCash" ColumnName="SaleByCash" />
+          <ScalarProperty Name="SaleByNETS" ColumnName="SaleByNETS" />
+          <ScalarProperty Name="Expense" ColumnName="Expense" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Expense" FunctionName="MSProModel.Store.sp_frm_get_Today_Expense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Expense_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Product_Sales" FunctionName="MSProModel.Store.sp_frm_get_Today_Product_Sales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Product_Sales_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Purchase" FunctionName="MSProModel.Store.sp_frm_get_Today_Purchase">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Purchase_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Service_Details" FunctionName="MSProModel.Store.sp_frm_get_Today_Service_Details">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Service_Details_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Service_Items" FunctionName="MSProModel.Store.sp_frm_get_Today_Service_Items">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Service_Items_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Service_Status" FunctionName="MSProModel.Store.sp_frm_get_Today_Service_Status">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Service_Status_Result">
+          <ScalarProperty Name="col1" ColumnName="col1" />
+          <ScalarProperty Name="col2" ColumnName="col2" />
+          <ScalarProperty Name="col3" ColumnName="col3" />
+          <ScalarProperty Name="col4" ColumnName="col4" />
+          <ScalarProperty Name="col5" ColumnName="col5" />
+          <ScalarProperty Name="col6" ColumnName="col6" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Vendors" FunctionName="MSProModel.Store.sp_frm_get_Vendors">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Vendors_Result">
+          <ScalarProperty Name="VendorCode" ColumnName="VendorCode" />
+          <ScalarProperty Name="VendorName" ColumnName="VendorName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_Security_get_parm_Users" FunctionName="MSProModel.Store.sp_frm_Security_get_parm_Users">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_Security_get_parm_Users_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_Security_get_UserHomePage" FunctionName="MSProModel.Store.sp_frm_Security_get_UserHomePage" />
+    <FunctionImportMapping FunctionImportName="sp_frm_Security_get_Users" FunctionName="MSProModel.Store.sp_frm_Security_get_Users">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_Security_get_Users_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_Security_TreeViewMenu" FunctionName="MSProModel.Store.sp_frm_Security_TreeViewMenu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_Security_TreeViewMenu_Result">
+          <ScalarProperty Name="PageID" ColumnName="PageID" />
+          <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+          <ScalarProperty Name="PageURL" ColumnName="PageURL" />
+          <ScalarProperty Name="ChildNodeCount" ColumnName="ChildNodeCount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frmSysUserGet" FunctionName="MSProModel.Store.sp_frmSysUserGet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frmSysUserGet_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+          <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+          <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_test" FunctionName="MSProModel.Store.sp_test" />
+    <EntitySetMapping Name="ServiceBill">
+      <EntityTypeMapping TypeName="MSProModel.ServiceBill">
+        <MappingFragment StoreEntitySet="ServiceBill">
+          <ScalarProperty Name="ActualCost" ColumnName="ActualCost" />
+          <ScalarProperty Name="ReadyDate" ColumnName="ReadyDate" />
+          <ScalarProperty Name="ReadyBy" ColumnName="ReadyBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="EstimateAmount" ColumnName="EstimateAmount" />
+          <ScalarProperty Name="OutSourceCode" ColumnName="OutSourceCode" />
+          <ScalarProperty Name="IMEINo" ColumnName="IMEINo" />
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordType" ColumnName="PasswordType" />
+          <ScalarProperty Name="TechRemark" ColumnName="TechRemark" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="NatureFault" ColumnName="NatureFault" />
+          <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_add_upd_Bill" FunctionName="MSProModel.Store.sp_frm_add_upd_Bill" />
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Bills" FunctionName="MSProModel.Store.sp_frm_get_Bills">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Bills_Result">
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+          <ScalarProperty Name="NatureFault" ColumnName="NatureFault" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="TechRemark" ColumnName="TechRemark" />
+          <ScalarProperty Name="PasswordType" ColumnName="PasswordType" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="IMEINo" ColumnName="IMEINo" />
+          <ScalarProperty Name="OutSourceCode" ColumnName="OutSourceCode" />
+          <ScalarProperty Name="OutSourceName" ColumnName="OutSourceName" />
+          <ScalarProperty Name="EstimateAmount" ColumnName="EstimateAmount" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="ReadyBy" ColumnName="ReadyBy" />
+          <ScalarProperty Name="ReadyDate" ColumnName="ReadyDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Bills_Report" FunctionName="MSProModel.Store.sp_frm_get_Bills_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Bills_Report_Result">
+          <ScalarProperty Name="ReceiptNo" ColumnName="ReceiptNo" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+          <ScalarProperty Name="NatureFault" ColumnName="NatureFault" />
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="TechRemark" ColumnName="TechRemark" />
+          <ScalarProperty Name="PasswordType" ColumnName="PasswordType" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="BrandCode" ColumnName="BrandCode" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="IMEINo" ColumnName="IMEINo" />
+          <ScalarProperty Name="OutSourceName" ColumnName="OutSourceName" />
+          <ScalarProperty Name="EstimateAmount" ColumnName="EstimateAmount" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+          <ScalarProperty Name="ActualCost" ColumnName="ActualCost" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReadyBy" ColumnName="ReadyBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Daily_Service_Report" FunctionName="MSProModel.Store.sp_frm_get_Daily_Service_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Daily_Service_Report_Result">
+          <ScalarProperty Name="EstimatedAmount" ColumnName="EstimatedAmount" />
+          <ScalarProperty Name="CollectedAmount" ColumnName="CollectedAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="ByCash" ColumnName="ByCash" />
+          <ScalarProperty Name="ByNETS" ColumnName="ByNETS" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_frm_get_Today_Service_Details_Report" FunctionName="MSProModel.Store.sp_frm_get_Today_Service_Details_Report">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MSProModel.sp_frm_get_Today_Service_Details_Report_Result">
+          <ScalarProperty Name="EstimatedAmount" ColumnName="EstimatedAmount" />
+          <ScalarProperty Name="CollectedAmount" ColumnName="CollectedAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

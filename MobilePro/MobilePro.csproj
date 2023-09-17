@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{226783CF-3701-463F-B6EE-2F8E4DE31219}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobilePro</RootNamespace>
+    <AssemblyName>MobilePro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.Common\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acc_SalesBill.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_SalesItems.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_SalesPayments.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_Vendors.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Brands.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\clsCommon.cs" />
+    <Compile Include="Classes\clsEncryption.cs" />
+    <Compile Include="Classes\clsSystem.cs" />
+    <Compile Include="Classes\Data.cs" />
+    <Compile Include="BillReceiptForm.cs" />
+    <Compile Include="BillRptReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillRptReceipt.Designer.cs">
+      <DependentUpon>BillRptReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsSMS.cs" />
+    <Compile Include="Colors.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyUsers.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Condition.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DailyServiceForm.cs" />
+    <Compile Include="Employees.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyService.designer.cs">
+      <DependentUpon>frmDailyService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MobileProDataSet.cs" />
+    <Compile Include="MobileProDataSet.Designer.cs" />
+    <Compile Include="MobilePro_SalesDataSet.Designer.cs" />
+    <Compile Include="Models.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseItems.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RptDailyService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptDailyService.Designer.cs">
+      <DependentUpon>RptDailyService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSMSModem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSMSModem.designer.cs">
+      <DependentUpon>frmSMSModem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fault.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCondition.designer.cs">
+      <DependentUpon>frmCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFault.designer.cs">
+      <DependentUpon>frmFault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceBillAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceBillAdd.designer.cs">
+      <DependentUpon>frmServiceBillAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreatePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreatePurchase.designer.cs">
+      <DependentUpon>frmCreatePurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListPurchase.designer.cs">
+      <DependentUpon>frmListPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixPrice.designer.cs">
+      <DependentUpon>frmFixPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProducts.designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenseVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpenseVendors.designer.cs">
+      <DependentUpon>frmExpenseVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendors.designer.cs">
+      <DependentUpon>frmVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutSources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutSources.designer.cs">
+      <DependentUpon>frmOutSources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrands.designer.cs">
+      <DependentUpon>frmBrands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategories.designer.cs">
+      <DependentUpon>frmCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabelForm.cs" />
+    <Compile Include="RptLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptLabel.Designer.cs">
+      <DependentUpon>RptLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailySalesForm.cs" />
+    <Compile Include="frmServiceBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceBills.designer.cs">
+      <DependentUpon>frmServiceBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutSources.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RptDailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptDailySales.Designer.cs">
+      <DependentUpon>RptDailySales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailySales.designer.cs">
+      <DependentUpon>frmDailySales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpenseAdd.designer.cs">
+      <DependentUpon>frmExpenseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpenses.designer.cs">
+      <DependentUpon>frmExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expense.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenseVendors.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frmBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBills.designer.cs">
+      <DependentUpon>frmBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillAdd.designer.cs">
+      <DependentUpon>frmBillAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainScreen.designer.cs">
+      <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplate.designer.cs">
+      <DependentUpon>frmTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobilePro.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobilePro.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MobilePro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MobilePro.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobilePro.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="ReceiptForm.cs" />
+    <Compile Include="RptReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptReceipt.Designer.cs">
+      <DependentUpon>RptReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesBill.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesItems.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesPurchase.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesPurchaseItems.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesStocks.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_Pages.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_RolePages.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_Roles.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="security_UsersInRoles.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceBill.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceItems.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_AccSales_Payments_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Acc_Sales_Bill_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Acc_Sales_Items_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Acc_Sales_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Acc_Vendors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Bills_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Bills_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Bill_Details_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Bill_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Brands_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Categories_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Category_Sales_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Colors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Companies_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Condition_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Daily_Sales_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Daily_Service_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_ExpenseVendors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Expense_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Fault_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Models_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Monthly_Sales_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_OutSources_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Acc_Vendors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Brands_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Categories_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Colors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Companies_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Condition_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_ExpenseVendors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Fault_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Models_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_OutSources_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Products_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Parm_Status_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Parm_Users_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_parm_Vendors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Products_Report_Temp2_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Products_Report_Temp_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Products_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Product_Sales_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Purchases_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Purchase_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Bill_Details_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Bill_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Items_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Purchases_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Purchase_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Stocks_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Sales_Stock_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Service_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Staff_Expense_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Stocks_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Stock_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Category_Sales_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Details_Report_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Details_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Expense_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Product_Sales_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Purchase_Expense_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Purchase_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Service_Details_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Service_Items_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Today_Service_Status_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_get_Vendors_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_Security_get_parm_Users_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_Security_get_Users_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_frm_Security_TreeViewMenu_Result.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffExpense.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stocks.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vendors.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="webpages_Membership.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="webpages_OAuthMembership.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="webpages_Roles.cs">
+      <DependentUpon>MobilePro.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BillRptReceipt.resx">
+      <DependentUpon>BillRptReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyService.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyService.resx">
+      <DependentUpon>frmDailyService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDailyService.resx">
+      <DependentUpon>RptDailyService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSMSModem.resx">
+      <DependentUpon>frmSMSModem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCondition.resx">
+      <DependentUpon>frmCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFault.resx">
+      <DependentUpon>frmFault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceBillAdd.resx">
+      <DependentUpon>frmServiceBillAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreatePurchase.resx">
+      <DependentUpon>frmCreatePurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListPurchase.resx">
+      <DependentUpon>frmListPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixPrice.resx">
+      <DependentUpon>frmFixPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpenseVendors.resx">
+      <DependentUpon>frmExpenseVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendors.resx">
+      <DependentUpon>frmVendors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutSources.resx">
+      <DependentUpon>frmOutSources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrands.resx">
+      <DependentUpon>frmBrands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategories.resx">
+      <DependentUpon>frmCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Label.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLabel.resx">
+      <DependentUpon>RptLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailySales.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServiceBills.resx">
+      <DependentUpon>frmServiceBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDailySales.resx">
+      <DependentUpon>RptDailySales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailySales.resx">
+      <DependentUpon>frmDailySales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpenseAdd.resx">
+      <DependentUpon>frmExpenseAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpenses.resx">
+      <DependentUpon>frmExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBills.resx">
+      <DependentUpon>frmBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillAdd.resx">
+      <DependentUpon>frmBillAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainScreen.resx">
+      <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplate.resx">
+      <DependentUpon>frmTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptReceipt.resx">
+      <DependentUpon>RptReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MobilePro.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MobilePro.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EmbeddedResource Include="BillReceipt.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="MobilePro.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MobilePro.edmx</DependentUpon>
+      <LastGenOutput>MobilePro.Context.cs</LastGenOutput>
+    </None>
+    <None Include="MobilePro.edmx.diagram">
+      <DependentUpon>MobilePro.edmx</DependentUpon>
+    </None>
+    <None Include="MobilePro.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MobilePro.edmx</DependentUpon>
+      <LastGenOutput>MobilePro.cs</LastGenOutput>
+    </None>
+    <None Include="MobileProDataSet.xsc">
+      <DependentUpon>MobileProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MobileProDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MobileProDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MobileProDataSet.xss">
+      <DependentUpon>MobileProDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MobilePro_SalesDataSet.xsc">
+      <DependentUpon>MobilePro_SalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MobilePro_SalesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MobilePro_SalesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MobilePro_SalesDataSet.xss">
+      <DependentUpon>MobilePro_SalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\About.png" />
+    <Content Include="Resources\add.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\addtext_com_MDMxOTA1MzcyOTM.jpg" />
+    <Content Include="Resources\Alert.png" />
+    <Content Include="Resources\approve.png" />
+    <Content Include="Resources\bin.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\ChangePwd.png" />
+    <Content Include="Resources\chat-bubble.png" />
+    <Content Include="Resources\download.png" />
+    <Content Include="Resources\email.png" />
+    <Content Include="Resources\Error.gif" />
+    <None Include="Resources\Ready.bmp" />
+    <Content Include="Resources\user1.png" />
+    <Content Include="Resources\users.png" />
+    <Content Include="Resources\video-play.png" />
+    <None Include="Resources\Login.jpg" />
+    <None Include="Resources\Logout.bmp" />
+    <Content Include="Resources\folder.png" />
+    <Content Include="Resources\graph.png" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\lock.png" />
+    <Content Include="Resources\magnifying-glass.png" />
+    <Content Include="Resources\minimize.png" />
+    <Content Include="Resources\pen.png" />
+    <Content Include="Resources\Role.png" />
+    <None Include="Resources\Thumbs.db" />
+    <None Include="Resources\User.bmp" />
+    <Content Include="Resources\unlock.png" />
+    <Content Include="Resources\upload.png" />
+    <Content Include="Resources\user-female.png" />
+    <Content Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

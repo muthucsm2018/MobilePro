@@ -1,0 +1,360 @@
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\MobilePro.exe
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\MobilePro.exe.config
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\EntityFramework.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\EntityFramework.xml
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\RdlCompile.cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\RdlCompile.compiled
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.exe
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\PagedList.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\PagedList.xml
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\MaterialSkin.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\bin\Debug\Receipt.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MobilePro.exe.config
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.exe
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\BillReceipt.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\DailySales.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\Receipt.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MobilePro.exe
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\EntityFramework.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MaterialSkin.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\PagedList.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\EntityFramework.xml
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\PagedList.xml
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\RdlCompile.cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\RdlCompile.compiled
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\bin\Debug\Label.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmUsers.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\BillReceipt.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\Label.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\DailySales.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\Receipt.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MobilePro.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MobilePro.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MobilePro.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\MaterialSkin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\PagedList.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\bin\Debug\PagedList.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmUsers.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\RdlCompile.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\RdlCompile.compiled
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\MobilePro_SalesService\MobilePro\obj\x86\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\MobilePro.exe.config
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.exe
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\Label.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\DailySales.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\Receipt.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\BillReceipt.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\MobilePro.exe
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\MobilePro.pdb
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\EntityFramework.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\MaterialSkin.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\PagedList.dll
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\EntityFramework.xml
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\PagedList.xml
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmSMSModem.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmCondition.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmFault.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmUsers.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\RdlCompile.cache
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\RdlCompile.compiled
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmDailyService.resources
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\bin\Debug\DailyService.rdlc
+C:\Users\muthu\Documents\Visual Studio 2012\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptDailyService.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\MobilePro.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\BillReceipt.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\DailyService.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\Label.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\DailySales.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\Receipt.rdlc
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\MobilePro.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\MobilePro.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\MaterialSkin.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\PagedList.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\bin\Debug\PagedList.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptDailyService.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmDailyService.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmSMSModem.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmCondition.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmFault.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmUsers.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\123Mobiles\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\MobilePro.exe.config
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.exe
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.pdb
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\BillReceipt.rdlc
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\DailyService.rdlc
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\Label.rdlc
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\DailySales.rdlc
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\Receipt.rdlc
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\MobilePro.exe
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\MobilePro.pdb
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\EntityFramework.dll
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\MaterialSkin.dll
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\PagedList.dll
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\EntityFramework.xml
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+E:\Projects\FamoProjects\MobilePRO\MobilePro\bin\Debug\PagedList.xml
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptDailyService.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmDailyService.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmSMSModem.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCondition.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmFault.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmUsers.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+E:\Projects\FamoProjects\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\MobilePro.exe.config
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.exe
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.pdb
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\BillReceipt.rdlc
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\DailyService.rdlc
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\Label.rdlc
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\DailySales.rdlc
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\Receipt.rdlc
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\MobilePro.exe
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\MobilePro.pdb
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\EntityFramework.dll
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\MaterialSkin.dll
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\PagedList.dll
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\EntityFramework.xml
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\bin\Debug\PagedList.xml
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptDailyService.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmDailyService.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmSMSModem.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCondition.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmFault.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmUsers.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+E:\Projects\FamoProjects\MobilePROFiles\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\MobilePro.exe.config
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.exe
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.pdb
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.BillRptReceipt.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptDailyService.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmSMSModem.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCondition.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmFault.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmServiceBillAdd.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCreatePurchase.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmListPurchase.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmFixPrice.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmProducts.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenseVendors.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmVendors.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmOutSources.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBrands.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmCategories.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptLabel.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmServiceBills.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptDailySales.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmDailySales.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenseAdd.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmExpenses.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBills.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmBillAdd.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmAbout.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmLogin.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmMainScreen.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmTemplate.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.Properties.Resources.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.RptReceipt.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.csproj.GenerateResource.Cache
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\DailyService.rdlc
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\Label.rdlc
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\DailySales.rdlc
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\Receipt.rdlc
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\MobilePro.exe
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\MobilePro.pdb
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\EntityFramework.dll
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\MaterialSkin.dll
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\PagedList.dll
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\EntityFramework.xml
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\PagedList.xml
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.frmDailyService.resources
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\bin\Debug\BillReceipt.rdlc
+C:\Users\P0105443\Documents\MobilePRO\MobilePro\obj\x86\Debug\MobilePro.csprojResolveAssemblyReference.cache
